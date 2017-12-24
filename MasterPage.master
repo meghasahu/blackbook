@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <ul>
+        <li><a href="About.aspx">ABOUT</a></li>
+        <li><a href="Library.aspx">LIBRARY</a></li>
+        <li><a href="join.aspx">JOIN</a></li>
+        <li><a href="create.aspx">CREATE</a></li>
+        <li><a href="Settings.aspx">SETTING</a></li>
+    </ul>
+
+   </body>
+</html>
