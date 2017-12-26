@@ -1,14 +1,16 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
-    </asp:ContentPlaceHolder>
-</head>
+    <title>Online BlackBook</title>
+    </head>
 <body>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <div id="wrapper" style="width:50px;height:20px"">
+       </div>
+    <div class="navigation">
     <ul>
         <li><a href="About.aspx">ABOUT</a></li>
         <li><a href="Library.aspx">LIBRARY</a></li>
@@ -16,6 +18,12 @@
         <li><a href="create.aspx">CREATE</a></li>
         <li><a href="Settings.aspx">SETTING</a></li>
     </ul>
-
+        </div>
+        <br />
+        <div id="content">
+            
+        </div>
+    <asp:ContentPlaceHolder ID="content1" runat="server"></asp:ContentPlaceHolder>
    </body>
+
 </html>
